@@ -1,0 +1,3 @@
+-r requirements.txt
+# 运行 tests/ 里的测试时需要
+httpx>=0.27

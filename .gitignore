@@ -1,0 +1,19 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+
+# 运行时产物
+recipes/*.tmp
+*.log
+server.log
+
+# 前端测试用到的本地文件
+node_modules/
+marked.min.js
+
+# 编辑器 / 系统
+.DS_Store
+.idea/
+.vscode/
+*.swp

@@ -1,0 +1,52 @@
+/* 基础样式：Tailwind 未加载（离线）时页面依然可用 */
+:root { color-scheme: light; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  line-height: 1.65;
+  color: #1e293b;
+  background: #fffbeb;
+}
+a { color: inherit; }
+.hidden { display: none; }
+
+.chip {
+  display: inline-block;
+  margin: 0 0.25rem 0.25rem 0;
+  padding: 0.125rem 0.6rem;
+  border-radius: 9999px;
+  background: #fef3c7;
+  color: #92400e;
+  font-size: 0.8125rem;
+  white-space: nowrap;
+}
+
+/* Markdown 渲染结果排版 */
+.markdown-body { font-size: 1rem; word-wrap: break-word; }
+.markdown-body h1 { font-size: 1.5rem; margin: 1.25rem 0 0.75rem; font-weight: 700; }
+.markdown-body h2 {
+  font-size: 1.2rem; margin: 1.5rem 0 0.6rem; font-weight: 700;
+  padding-bottom: 0.3rem; border-bottom: 1px solid #f1f5f9;
+}
+.markdown-body h3 { font-size: 1.05rem; margin: 1.1rem 0 0.5rem; font-weight: 600; }
+.markdown-body p { margin: 0.6rem 0; }
+.markdown-body ul, .markdown-body ol { margin: 0.6rem 0; padding-left: 1.6rem; }
+.markdown-body ul { list-style: disc; }
+.markdown-body ol { list-style: decimal; }
+.markdown-body li { margin: 0.25rem 0; }
+.markdown-body code {
+  background: #f1f5f9; padding: 0.1rem 0.35rem; border-radius: 0.25rem;
+  font-size: 0.9em; font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+.markdown-body pre { background: #f8fafc; padding: 0.9rem; border-radius: 0.5rem; overflow-x: auto; }
+.markdown-body pre code { background: none; padding: 0; }
+.markdown-body blockquote {
+  margin: 0.75rem 0; padding: 0.25rem 0.9rem;
+  border-left: 3px solid #fbbf24; color: #57534e; background: #fffbeb;
+}
+.markdown-body table { border-collapse: collapse; margin: 0.75rem 0; width: 100%; }
+.markdown-body th, .markdown-body td { border: 1px solid #e2e8f0; padding: 0.4rem 0.6rem; text-align: left; }
+.markdown-body img { max-width: 100%; height: auto; border-radius: 0.5rem; }
+.markdown-body hr { border: none; border-top: 1px solid #e2e8f0; margin: 1.25rem 0; }
+.markdown-body a { color: #b45309; text-decoration: underline; }
